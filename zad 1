@@ -1,0 +1,14 @@
+#Napisz program, który wczytuje liczby całkowite większe od zera : a>0 i sprawdza czy liczba jest podzielna przez 7. Program poprzedź specyfikacją.
+
+
+#Program wczytuje liczbę całkowitą a większą od zera.
+#Sprawdza czy liczba a jest podzielna przez 7.
+#Jeśli liczba a jest podzielna przez 7, wyświetla komunikat "Liczba a jest podzielna przez 7".
+#Jeśli liczba a nie jest podzielna przez 7, wyświetla komunikat "Liczba a nie jest podzielna przez 7".
+
+a = int(input("Podaj liczbę całkowitą większą od zera: "))
+
+if a % 7 == 0:
+    print("Liczba", a, "jest podzielna przez 7")
+else:
+    print("Liczba", a, "nie jest podzielna przez 7")
