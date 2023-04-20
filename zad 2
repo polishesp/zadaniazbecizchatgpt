@@ -1,0 +1,19 @@
+#Napisz program, który prosi użytkownika o podanie 2 liczb całkowitych, następnie oblicza ich sumę i sprawdza czy suma jest parzysta czy nieparzysta. 
+#Napisz specyfikacje do zadania.
+
+
+#Program prosi użytkownika o podanie 2 liczb całkowitych.
+#Program wykonuje operację dodawania na wczytanych liczbach całkowitych.
+#Program sprawdza czy suma wczytanych liczb jest parzysta czy nieparzysta.
+#Jeśli suma jest parzysta, wyświetla komunikat "Suma jest liczbą parzystą".
+#Jeśli suma jest nieparzysta, wyświetla komunikat "Suma jest liczbą nieparzystą".
+
+a = int(input("Podaj pierwszą liczbę całkowitą: "))
+b = int(input("Podaj drugą liczbę całkowitą: "))
+
+suma = a + b
+
+if suma % 2 == 0:
+    print("Suma jest liczbą parzystą")
+else:
+    print("Suma jest liczbą nieparzystą")
