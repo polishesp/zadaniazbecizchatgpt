@@ -1,0 +1,31 @@
+#Napisz program obliczający BMI na podstawie wagi w kg - liczba rzeczywista > 0 i wzrostu w metrach-liczba rzeczywista >0, następnie wyświetla komunikat
+#czy waga jest prawidłowa lub niedowaga lub nadwaga, lub otyłość. Napisz specyfikację do zadania.
+#BMI= waga/wzrost2
+#BMI<18,5 – niedowaga
+#BMI<24,9 – waga prawidłowa
+#BMI<29,9 – nadwaga
+#BMI>=30- otyłość
+
+
+#Program prosi użytkownika o podanie wagi w kg jako liczby rzeczywiste większej od zera.
+#Program prosi użytkownika o podanie wzrostu w metrach jako liczby rzeczywiste większej od zera.
+#Program oblicza wartość BMI według wzoru: BMI = waga / wzrost^2
+#Program sprawdza wartość BMI i wyświetla komunikat informujący o stanie wagowym:
+#1 Jeśli BMI < 18.5, wyświetla komunikat "Niedowaga".
+#2 Jeśli 18.5 <= BMI < 25, wyświetla komunikat "Waga prawidłowa".
+#3 Jeśli 25 <= BMI < 30, wyświetla komunikat "Nadwaga".
+#4 Jeśli BMI >= 30, wyświetla komunikat "Otyłość".
+
+waga = float(input("Podaj swoją wagę w kg: "))
+wzrost = float(input("Podaj swój wzrost w metrach: "))
+
+bmi = waga / (wzrost ** 2)
+
+if bmi < 18.5:
+    print("Niedowaga")
+elif bmi < 25:
+    print("Waga prawidłowa")
+elif bmi < 30:
+    print("Nadwaga")
+else:
+    print("Otyłość")
